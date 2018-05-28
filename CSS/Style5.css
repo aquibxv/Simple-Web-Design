@@ -1,0 +1,96 @@
+/* Css Variables */
+:root{
+	--primary:#ddd;
+	--dark:#333;
+	--light:#fff;
+	--shadow:0px 1px 5px rgba(104,104,104,0.8);
+}
+
+html,body{
+	background: #fff;
+	box-sizing: border-box;
+	margin:0px;
+	padding:0px;
+}
+
+
+/*Header Area*/
+
+header.grid-business-header{
+	position: sticky;
+	top: 0px;
+	background: #eee;
+	box-shadow: var(--shadow);
+	font-size: 1rem;
+	padding:0px;
+}
+
+header.grid-business-header h1{
+	padding:20px 0px 5px 10px;
+	font-weight: bold;
+	color:#111;
+	margin:0px;
+}
+header.grid-business-header span{
+	font-weight: lighter;
+	color: blue;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+header.grid-business-header a{
+	display: inline-block;
+	text-decoration: none;
+}
+
+/*Apply form*/
+
+
+section.apply{
+	background:#ccebff;
+	box-shadow: var(--shadow);
+	margin:auto;
+	margin-top: 30px;
+	padding:30px;
+	width: 50%;
+}
+section.apply p,h3{
+	padding:0px;
+	margin:0px;
+}
+ h3#job_select{
+	font-size: 1.8rem;
+	padding-bottom: 15px;
+}
+ select#job_select_options{
+	font-size: 1.1rem;
+	padding:5px 8px;
+	margin-bottom: 30px;
+	width: 280px;
+}
+ table#form_input{
+	border-top: 1px solid black;
+	padding-top: 30px;
+}
+ table#form_input td{
+	text-align: center;
+	padding-bottom: 10px;
+}
+ table#form_input input[type="text"]
+{
+	width: 270px;
+	padding:4px;
+}
+section.apply div.profile{
+	border-top: 1px solid black;
+	padding-top: 25px;
+}
+section.apply  p,input[type="text"]{
+	margin-bottom: 10px;
+}
+section.apply input[type="text"]{
+	padding:2px;
+	margin-bottom: 20px;
+}
+input[type="submit"]{
+	background: #1aa3ff;
+}

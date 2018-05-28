@@ -1,0 +1,153 @@
+/* Css Variables */
+:root{
+	--primary:#ddd;
+	--dark:#333;
+	--light:#fff;
+	--shadow:0px 1px 5px rgba(104,104,104,0.8);
+}
+
+.container{
+	margin:0px;
+	padding:0px;
+	width: 80%;
+}
+
+html,body{
+	background: #fff;
+	box-sizing: border-box;
+	margin:0px;
+	padding:0px;
+}
+
+
+/*Header Area*/
+
+header.grid-business-header{
+	position: sticky;
+	top: 0px;
+	background: #eee;
+	box-shadow: var(--shadow);
+	font-size: 1rem;
+	padding:0px;
+}
+
+header.grid-business-header h1{
+	padding:20px 0px 5px 10px;
+	font-weight: bold;
+	color:#111;
+	margin:0px;
+}
+header.grid-business-header span{
+	font-weight: lighter;
+	color: blue;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+header.grid-business-header a{
+	display: inline-block;
+	text-decoration: none;
+}
+
+/*Input form*/
+
+section.Subscribe{
+	margin:auto;
+	width: 60%;
+}
+section.Subscribe div#plan{
+	background-color: #f2f2f2;
+	border:0.5px solid #e6e6e6;
+	border-radius: 4px;
+	padding:10px;
+}
+section.Subscribe div#plan label{
+	font-size: 1.2rem;
+	font-weight: lighter;
+	padding-right: 10px;
+	padding-left: 20px;
+}
+section.Subscribe div#plan select{
+	font-size: 16px;
+	padding:4px;
+}
+section.Subscribe div#plan option{
+	padding-top: 10px;
+}
+
+section.Subscribe h1#purchase{
+	text-align: center;
+	color:#777;
+	border-bottom:2px solid #3399ff;
+	border-radius: 3px;
+	font-size: 2.3rem;
+	font-weight: lighter;
+}
+section.Subscribe div.subscription-form-grid{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-gap: 0.5em;
+	background: #f2f2f2;
+	border:0.5px solid #e6e6e6;
+	border-radius: 4px;
+	padding:10px;
+}
+
+/*Making both the two boxes as Grids*/
+section.Subscribe div.subscription-form-grid div.Billing-Address,div.Payment-Details{
+	display: grid;
+	grid-template-rows: repeat(6,1fr);
+}
+
+section.Subscribe div.subscription-form-grid > div{
+	padding-left: 20px;
+}
+section.Subscribe div.subscription-form-grid div.Billing-Address h3,div.Payment-Details h3{
+	font-size: 1.2rem;
+	font-weight: lighter;
+}
+
+section.Subscribe div.subscription-form-grid > div > div{
+	padding-bottom:10px;
+}
+section.Subscribe form.subscription-form input#cardname,input#cardnumber,input#expmonth,input#fname,input#email,input#cname,input#ctelephone{
+	width: 80%;
+	padding:7px 7px;
+}
+section.Subscribe form.subscription-form select#csize,input#teamname,input#cvv,input#expyear{
+	width: 60%;
+	padding: 7px 7px;
+}
+
+div#companysize-teamname,div.cvv-expiry_year{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+}
+section.Subscribe div.checkbox-submit{
+	background: #f2f2f2;
+	border:0.5px solid #e6e6e6;
+	border-radius: 4px;
+	padding:25px 29px;
+}
+
+section.Subscribe form.subscription-form div.checkbox-submit input#submit_btn{
+	position: relative;
+	background-color: #3399ff;
+	width:70%;
+	font-size:0.8rem;
+	font-weight: bold;
+	border:none;
+	border-radius: 5px;
+	color:white;
+	padding:10px 0px;
+	left: 18%;
+}
+section.Subscribe form.subscription-form div.checkbox-submit input#submit_btn:hover{
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+section.Subscribe form.subscription-form div.checkbox-submit div#agree{
+	position: relative;
+	left: 35%;
+	padding-bottom: 20px;
+}

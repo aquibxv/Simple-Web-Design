@@ -1,0 +1,137 @@
+/* Css Variables */
+:root{
+	--primary:#ddd;
+	--dark:#333;
+	--light:#fff;
+	--shadow:0px 1px 5px rgba(104,104,104,0.8);
+}
+
+/*Top Container*/
+.banner .advertise{
+	position: relative;
+	background: url(../Images/advertise.jpg) no-repeat 0px -180px;
+	box-shadow: var(--shadow);
+	width: 100%;
+	height: 420px;
+	padding:0px;
+	margin:none;
+
+}
+
+.banner .advertise h2{
+	position: absolute;
+	top:80px;
+	left: 20px;
+	font-size: 3rem;
+	color: var(--light);
+}
+
+.banner .advertise p{
+	position: absolute;
+	top:110px;
+	left: 20px;
+	color: var(--light);
+}
+
+.banner div.newsletter{
+	padding:25px;
+	background:var(--primary);
+	box-shadow: var(--shadow);
+	border-top: 5px solid var(--dark);
+}
+
+.banner div.newsletter h3{
+	font-size: 1.5rem;
+	float: left;
+	padding-right: 500px;
+}
+
+ div.newsletter input[type="text"]{
+ 	padding:7px;
+ 	font-size: 1rem;
+ }
+
+/*Services section*/
+.Services{
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-gap: 1.5em;
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.Services .box{
+	background: var(--primary);
+	box-shadow: var(--shadow);
+	padding-top: 14px;
+	background-position: center;
+	background-size: cover;
+}
+
+.Services .box p{
+	text-align: justify;
+	padding: 0px 27px;
+	font-size: 14px;
+}
+
+/*Membership*/
+
+section.membership{
+	width: 70%;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-gap: 1rem;
+	text-align: center;
+	margin:auto;
+
+}
+
+section.membership .mem-box{
+	background:var(--primary);
+	box-shadow: var(--shadow);
+	padding-bottom: 20px;
+	margin-top: 19px;
+	padding-bottom: 0px;
+}
+
+.mem-box h4{
+	font-size: 1.5rem;
+	background: var(--dark);
+	color:var(--light);
+	border-bottom:8px solid #bbb;
+	margin-top:0px;
+	padding: 20px 10px;
+}
+
+
+.mem-box p.price{
+	font-weight: bold;
+	padding-top: 8px;
+	padding-bottom: 0px;
+}
+
+.mem-box p.bill{
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+ul.features{
+	border-top: 3px solid #bbb;
+	list-style: none;
+	padding:0px;
+	margin-top: 30px;
+	margin-bottom: 0px;
+}
+
+ul.features li{
+	text-align: center;
+	padding:20px;
+	margin-bottom: 0px;
+}
+
+ul.features > li:nth-child(odd){
+	background:#eee;
+}
+
