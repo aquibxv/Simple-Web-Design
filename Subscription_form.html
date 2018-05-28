@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Subscribe | GridBiz</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="keywords" content="template,responsive,girds,boxes,design">
+	<meta name="Author" content="Aquib ansarai">
+	<meta name="Descripition" content="HTML + CSS Project with Grids">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.11/js/all.js" integrity="sha384-ImVoB8Er8knetgQakxuBS4G3RSkyD8IZVVQCAnmRJrDwqJFYUE4YOv+DbIofcO9C" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Style.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Style6.css">
+	<script src="JS/Script1.js"></script>
+
+</head>
+<body>
+	
+	<!-- Wrapper -->
+
+	<!-- Header -->
+	<header class="grid-business-header">
+		<a href="Index.html"><h1>Grid <span id="bizz">Business<span></h1></a>
+	</header>
+
+	
+
+	<!-- Top Container -->
+	<section class="Subscribe">
+		<h1 id="purchase">Purchase Grid Business</h1>
+		<form class="subscription-form">
+			<div id="plan">
+				<label for="chose_plan">1.Chose Your Plan</label>
+				<select onselect="membership(this)">
+				<option >Regular Membership</option>
+				<option>Pro Membership</option>
+				<option>Ultimate Membership</option>
+				</select>
+			</div>
+			<div class="subscription-form-grid">
+				<div class="Billing-Address">
+				<div>
+					<h3>2.Tell us about yourself</h3>
+				</div>
+				<div>
+					<label for="fname">Full Name</label><br/>
+					<input type="text" name="firstname" id="fname">
+				</div>
+				<div>
+					<label for="email">Email</label><br/>
+					<input type="text" name="emailAddress" id="email">
+				</div>
+				<div>
+					<label for="cname">Company Name</label><br/>
+					<input type="text" name="companyName" id="cname">
+				</div>
+				<div>
+					<label for="ctelephone">Company telephone</label><br/>
+					<input type="text" name="cTelephone" id="ctelephone">
+				</div>
+				<div id="companysize-teamname">
+					<div>
+						<label for="csize">Company Size</label><br/>
+						<select id="csize" name="size">
+							<option>Below 50</option>
+							<option>50-149</option>
+							<option>150-349</option>
+							<option>350-549</option>
+							<option>550-999</option>
+							<option>1000-2499</option>
+							<option>2500-4999</option>
+							<option>5000+</option>
+					</select>
+					</div>
+					<div>
+						<label for="teamname">Team Name</label><br/>
+						<input type="text" id="teamname" name="TeamName">
+					</div>
+				</div>
+				</div>
+				<div class="Payment-Details">
+				<div>
+					<h3>3.Enter Payment Details</h3>
+				</div>
+				<div style="padding:0px 0px;">
+					<p style="padding:0px; margin:0px">Accepted Cards</p>
+					<div class="icon-container" style="padding:px; margin:0px">
+             		 <i class="fab fa-cc-visa fa-2x" style="color:navy;"></i>
+             		 <i class="fab fa-cc-amex fa-2x" style="color:blue;"></i>
+              		 <i class="fab fa-cc-mastercard fa-2x" style="color:red;"></i>
+              		 <i class="fab fa-cc-discover fa-2x" style="color:orange;"></i>
+           		 	</div>
+				</div>
+				<div>
+					<label for="cardname">Name on Card</label><br/>
+					<input type="text" id="cardname" name="CardName">
+				</div>
+				<div>
+					<label for="cardnumber">Credit Card Number</label><br/>
+					<input type="text" id="cardnumber" name="CardNumber">
+				</div>
+				<div>
+					<label for="expmonth">Exp Month</label><br/>
+					<input type="text" id="expmonth" name="ExpiryMonth">
+				</div>
+				<div class="cvv-expiry_year">
+					<div>
+						<label for="cvv">CVV</label><br/>
+						<input type="text" id="cvv" name="CVV">
+					</div>
+					<div>
+						<label for="expyear">Exp Year</label><br/>
+						<input type="text" id="expyear" name="ExpiryYear">
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="checkbox-submit">
+				<div id="agree"> 
+					 <label>
+          				<input id="agree_cond" type="checkbox" checked="checked" name="sameadr"> Agree to our <span style="color:blue">terms and conditions</span>
+        	 		 </label>
+        	 	</div>
+        				<br/><input id="submit_btn" type="submit" name="submit" value="Complete Purchase">
+       		</div>
+		</form>
+	</section>
+	
+
+	<!-- Footer -->
+	<footer>
+		<p>Grid-Business &copy; 2018 | Web Design - Aquib Ansari</p>
+		<div class="footer_links">
+			<a href="About.html#About_Us">About Us </a>
+			<a href="Carrers.html">Carrers</a>
+			<a href="Privacy.html">Privacy Policy</a>
+			<a href="Contact.html#Contact_Us">Contact Us</a>
+		</div>
+	</footer>
+
+	<!-- Wrapper Ends -->
+
+</body>
+</html>
